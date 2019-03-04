@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="Grid">
+        <attr name="rows" format="integer" />
+        <attr name="columns" format="integer" />
+        <attr name="name" format="string" />
+    </declare-styleable>
+</resources>

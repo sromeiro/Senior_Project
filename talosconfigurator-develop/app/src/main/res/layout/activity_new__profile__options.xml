@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sofwerx.usf.talosconfigurator.New_Profile_Options"
+    android:background="@drawable/talos_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="450dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="525dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Name: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+            android:textColor="#FFFF"
+            android:textSize="40sp"
+            />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textViewName"
+            android:hint="Firstname Lastname"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+            android:textColor="#FFFF"
+            android:textSize="30sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="450dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="150dp"
+        >
+
+        <TextView
+        android:id = "@+id/SpinDistText"
+        android:text="Distance:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:textColor="#FFFF"
+        android:textSize="25sp"
+        />
+
+        <Spinner
+            android:id = "@+id/SpinnerDist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/SpinDistText"
+            android:entries="@array/distance_units"
+            style="@android:style/Widget.Spinner"
+            >
+        </Spinner>
+
+        <TextView
+            android:id = "@+id/SpinTimeText"
+            android:text="Time:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+            android:textColor="#FFFF"
+            android:textSize="25sp"
+            />
+
+        <Spinner
+            android:id = "@+id/SpinnerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/SpinTimeText"
+            android:layout_centerVertical="true"
+            android:entries="@array/time_units"
+            style="@android:style/Widget.Spinner"
+            >
+        </Spinner>
+
+        <TextView
+            android:id = "@+id/SpinLocationText"
+            android:text="Location Units:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/SpinnerLoc"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+            android:textColor="#FFFF"
+            android:textSize="25sp"
+            />
+
+        <Spinner
+            android:id = "@+id/SpinnerLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:entries="@array/location_units"
+            style="@android:style/Widget.Spinner"
+            >
+        </Spinner>
+
+        <TextView
+            android:id = "@+id/SpinHeadingText"
+            android:text="Heading Units:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/SpinLocationText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+            android:textColor="#FFFF"
+            android:textSize="25sp"
+            />
+
+        <Spinner
+            android:id = "@+id/SpinnerHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/SpinHeadingText"
+            android:entries="@array/heading_units"
+            style="@android:style/Widget.Spinner"
+            >
+        </Spinner>
+
+        <Button
+            android:id="@+id/new_save_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:paddingRight="70dp"
+            android:paddingLeft="70dp"
+            android:textSize="30sp"
+            android:layout_toLeftOf="@id/SpinLocationText"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        />
+
+</android.support.constraint.ConstraintLayout>

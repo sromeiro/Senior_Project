@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">TalosConfigurator</string>
+    <string name="title_activity_main_screen">TALOS TOOL</string>
+    <string name="section_format">Hello World from Mode: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_file_tab_fragment">Hello File Tab Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_button_tab_fragment">Hello Buttons Tab Fragment</string>
+
+    <string name="hud_mode">Hud Config</string>
+    <string name="buttons_mode">Buttons Config</string>
+    
+    <string-array name="distance_units">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+
+    <string-array name="time_units">
+        <item>Local</item>
+        <item>Zulu</item>
+    </string-array>
+
+    <string-array name="location_units">
+        <item>10-Digit Military Grid</item>
+        <item>Latitude / Longitude</item>
+    </string-array>
+
+    <string-array name="heading_units">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+
+    <string-array name="drop_down_labels">
+        <item><FONT COLOR = "#006600"><b>Kilometers</b></FONT></item>
+        <item><FONT COLOR = "#006600"><b>Miles</b></FONT></item>
+        <item><FONT COLOR = "#006600"><b>Local</b></FONT></item>
+        <item><FONT COLOR = "#006600"><b>Zulu</b></FONT></item>
+        <item><FONT COLOR = "#006600"><b>10-Digit Military Grid</b></FONT></item>
+        <item><FONT COLOR = "#006600"><b>Latitude / Longitude</b></FONT></item>
+        <item><FONT COLOR = "#006600"><b>Degrees</b></FONT></item>
+        <item><FONT COLOR = "#006600"><b>Mils</b></FONT></item>
+    </string-array>
+
+</resources>

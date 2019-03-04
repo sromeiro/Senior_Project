@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sofwerx.usf.talosconfigurator.new_load_profile"
+    android:background="@drawable/talos_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="800dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="150dp"
+
+        >
+
+        <Button
+            android:id="@+id/new_profile_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Profile"
+            android:padding="30dp"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+        />
+
+        <Button
+            android:id="@+id/load_profile_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Profile"
+            android:padding="30dp"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+        />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

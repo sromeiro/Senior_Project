@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.sofwerx.usf.talosconfigurator.user_profile_selection"
+  android:background="@drawable/talos_background"
+  >
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="200dp"
+    android:layout_marginRight="200dp"
+    android:layout_marginTop="80dp"
+    android:layout_marginBottom="80dp"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:text="Select User Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:textColor="#FFFF"
+        android:textSize="40sp"
+        />
+
+    <Button
+      android:id="@+id/user_button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textView"
+      android:layout_toLeftOf="@id/textView"
+      android:layout_marginTop="50dp"
+      android:text="User1"
+      android:textSize="30sp"
+      />
+
+    <ImageButton
+      android:id="@+id/edit_user_button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="18dp"
+      android:layout_alignBottom="@id/user_button1"
+      android:layout_toEndOf="@+id/user_button1"
+      android:src="@android:drawable/ic_menu_manage"
+      />
+
+    <Button
+      android:id="@+id/user_button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textView"
+      android:layout_toRightOf="@id/textView"
+      android:layout_marginTop="50dp"
+      android:text="User2"
+      android:textSize="30sp"
+      />
+
+    <ImageButton
+      android:id="@+id/edit_user_button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="18dp"
+      android:layout_alignBottom="@id/user_button2"
+      android:layout_toEndOf="@+id/user_button2"
+      android:src="@android:drawable/ic_menu_manage"
+      />
+
+    <Button
+      android:id="@+id/user_button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/user_button1"
+      android:layout_toLeftOf="@id/textView"
+      android:layout_marginTop="50dp"
+      android:text="User3"
+      android:textSize="30sp"
+      />
+
+    <ImageButton
+      android:id="@+id/edit_user_button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="18dp"
+      android:layout_toEndOf="@+id/user_button3"
+      android:layout_alignBottom="@id/user_button3"
+      android:src="@android:drawable/ic_menu_manage"
+      />
+
+    <Button
+      android:id="@+id/user_button4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="User4"
+      android:textSize="30sp"
+      android:layout_below="@id/user_button2"
+      android:layout_toRightOf="@id/textView"
+      android:layout_marginTop="50dp"
+      />
+
+    <ImageButton
+      android:id="@+id/edit_user_button4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="18dp"
+      android:layout_toEndOf="@+id/user_button4"
+      android:layout_alignBottom="@id/user_button4"
+      android:src="@android:drawable/ic_menu_manage"
+      />
+
+
+
+  </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        />
+
+</android.support.constraint.ConstraintLayout>

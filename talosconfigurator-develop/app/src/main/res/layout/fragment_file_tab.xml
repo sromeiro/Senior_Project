@@ -1,0 +1,73 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.sofwerx.usf.talosconfigurator.FileTabFragment"
+                                             tools:layout_editor_absoluteY="25dp" tools:layout_editor_absoluteX="0dp"
+                                             android:clickable="true" android:focusableInTouchMode="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/btn_delete"
+        android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/btn_save"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2" android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp" app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/filename" android:textAlignment="textStart"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2" app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" android:layout_marginRight="8dp" app:layout_constraintRight_toRightOf="parent"
+        android:hint="Enter Filename Here" android:imeOptions="actionDone"/>
+    <Button
+        android:text="LOAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/btn_load"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp" android:layout_marginLeft="8dp" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.501" android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"/>
+    <Button
+        android:text="NEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_new"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_load" app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp" android:layout_marginLeft="8dp" app:layout_constraintLeft_toLeftOf="parent"/>
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/btn_save"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="8dp" android:layout_marginLeft="8dp" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.501"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline2"
+                                          android:orientation="vertical"
+                                          app:layout_constraintGuide_percent="0.5" tools:layout_editor_absoluteY="0dp"
+                                          tools:layout_editor_absoluteX="481dp"/>
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/file_list_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2" android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/filename" android:smoothScrollbar="true"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline3"
+                                          android:orientation="horizontal"
+                                          app:layout_constraintGuide_percent="0.5"/>
+
+</android.support.constraint.ConstraintLayout>
